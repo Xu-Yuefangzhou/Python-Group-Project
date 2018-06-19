@@ -1,3 +1,2 @@
-I am coco.
-Charlotte is a good student.
-She is silly silly.
+This is a test file.
+Testing.
