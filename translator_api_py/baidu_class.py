@@ -93,6 +93,5 @@ if __name__ == "__main__":
     if (source==1 and target==1):
         with open('fanyi.txt') as f: # 默认模式为‘r’，只读模式
             contents = f.read() # 读取文件全部内容
-            #contents.rstrip() # rstrip()函数用于删除字符串末的空白
             fanyi.translate(contents)
             
