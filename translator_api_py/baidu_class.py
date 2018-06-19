@@ -7,8 +7,8 @@ class BaiduFanyi:
      def __init__(self, ToLanguage, FromLanguage):
         self.httpClient = None
         self.myurl = '/api/trans/vip/translate'
-        self.appid = '20170608000055366'
-        self.secretKey = 'ChiaqzXuOMwL8StWn4ZV'
+        self.appid = '20180619000178058'
+        self.secretKey = '1b8f0UumffJWowWndmdy'
         self.ToLanguage = ToLanguage 
         self.FromLanguage = FromLanguage  
         self.supported_languages = { # as defined here: http://msdn.microsoft.com/en-us/library/hh456380.aspx
@@ -89,13 +89,7 @@ if __name__ == "__main__":
     target = fanyi.judge_to_languages()
     if (target==0):
         print (fanyi.print_supported_languages())
-    '''
-    while (source==1 and target==1):
-        queryText = input("请输入你需要翻译的文字[Q|quit退出]: ").strip()
-        if queryText in ['Q', 'quit']:
-            break
-        fanyi.translate(queryText)
-    '''
+   
     if (source==1 and target==1):
         with open('fanyi.txt') as f: # 默认模式为‘r’，只读模式
             contents = f.read() # 读取文件全部内容
